@@ -1,0 +1,17 @@
+{
+    "name": "User Online/Offline Status Marker",
+    "description": "Adds a marker on profiles of users of this addon, displaying whether they are online, idle, or offline scratch",
+    "tags": ["community","offline","online","status"],
+    "enabledByDefault": true,
+    "persistent_scripts":["send-status-background.js"],
+    "userscripts":[
+      {
+        "url":"page_detector.js",
+        "matches":["https://scratch.mit.edu/*"]
+      }
+      ,{
+        "url":"status_adder.js",
+        "matches":["https://scratch.mit.edu/users/*"]
+      }
+  ]
+  }
